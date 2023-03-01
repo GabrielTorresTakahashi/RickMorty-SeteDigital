@@ -5,8 +5,11 @@ class Home extends CI_Controller
 {
     public function index()
     {
-        $data = ['title' => 'Início', 'css' => ['style.css']];
+        $this->load->model('character_model');
+        $characters = $this->character_model->findAll();
+        $data = ['title' => 'Início', 'css' => ['style.css'], "characters" => $characters];
         $this->load->view('header', $data);
         $this->load->view('home');
+        $this->load->view('footer');
     }
 }
