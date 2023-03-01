@@ -1,0 +1,32 @@
+:root {
+    --primary: #319795;
+}
+
+.loginImg {
+    display: grid;
+    height: 100%;
+}
+
+.loginImg>img {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.loginBox {
+    width: 464px;
+    height: 565px;
+    left: 728px;
+    top: 133px;
+    justify-content: space-around;
+
+    background: #F5F5F5;
+    border-radius: 10px;
+}
+
+.logoSete {
+    width: 119px;
+    height: 52px;
+    left: 900px;
+    top: 184px;
+}
