@@ -30,12 +30,4 @@ class Login extends CI_Controller
 		}
 		$this->load->view('footer');
 	}
-
-	public function test()
-	{
-		$this->load->model('user_model');
-		print "<pre>";
-		print_r($this->user_model->findAll());
-		print "</pre>";
-	}
 }
