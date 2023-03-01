@@ -15,8 +15,7 @@ Foi utilizado o driver [php_mongodb.dll](https://github.com/mongodb/mongo-php-dr
 > composer require mongodb/mongodb
 
 ## Arquivos criados
-Todas as telas criadas estão dentro de application/views.
-
+ - Todas as telas criadas estão dentro de application/views.
  - Os controladores ficam localizados em application/controllers.
  - Os modelos criados residem em application/models.
  - O banco de dados MongoDb não é suportado nativamente pelo framework, então foi criada uma biblioteca para realizar a adaptação, localizada em application/libraries
