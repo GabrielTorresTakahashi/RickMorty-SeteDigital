@@ -18,7 +18,7 @@
                     <input type="text" class="form-control" name="age" placeholder="Sua idade aqui" required>
                 </div>
                 <div class="form-group px-5">
-                    <button type="submit" class="form-control btn btn-primary rounded submit px-3">Entrar</button>
+                    <button type="submit" class="form-control btn btn-primary rounded submit px-3">Cadastrar</button>
                 </div>
             </form>
             <p>Já possui cadastro? <a data-toggle="tab" href="<?= base_url() ?>">Fazer login</a></p>

@@ -10,9 +10,9 @@
             <div class="w-100 p-4">
                 <h4 class="pb-5 pt-3">Bem vindo</h3>
             </div>
-            <form action="<?= base_url() ?>Login/confirm" class="signin-form">
+            <form action="<?= base_url() ?>Login/confirm" method="post" class="signin-form">
                 <div class="form-group pb-3 px-5">
-                    <input type="text" class="form-control" placeholder="Seu nome aqui" required>
+                    <input type="text" name="name" class="form-control" placeholder="Seu nome aqui" required>
                 </div>
                 <div class="form-group px-5">
                     <button type="submit" class="form-control btn btn-primary rounded submit px-3">Entrar</button>

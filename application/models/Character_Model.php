@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class User_Model extends CI_Model
+class Character_Model extends CI_Model
 {
 
     function __construct()
@@ -14,18 +14,18 @@ class User_Model extends CI_Model
         return $this->load->library('db');
     }
 
-    public function save(array $user)
+    public function save($user)
     {
-        return $this->db->insertInto('users', $user);
+        return $this->db->insertInto('characters', $user);
     }
 
     public function findAll()
     {
-        return $this->db->findAll('users')->toArray();
+        return $this->db->findAll('characters')->toArray();
     }
 
     public function findByName($name)
     {
-        return $this->db->findParam("users",["name" => $name])->toArray();
+        return $this->db->findParam("characters",["name" => $name])->toArray();
     }
 }

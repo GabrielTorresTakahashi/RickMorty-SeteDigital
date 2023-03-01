@@ -12,7 +12,7 @@
                     <h4 class="pb-2">Sua idade é</h4>
             </div>
             <div class="w-100 pb-4">
-                <h1><?= (!isset($age) ? 'IDADE' : $age) ?></h1>
+                <h1><?= (!isset($user["age"]) ? 'IDADE' : $user["age"]) ?></h1>
             </div>
             <form action="<?=base_url()?>Home" class="signin-form pt-4">
                 <div class="form-group px-5">

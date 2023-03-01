@@ -17,14 +17,16 @@ class Db {
             }
             $characters->insertMany($documents);
         }
-        if ($users->countDocuments() == 0) {
-            $users->insertOne(["name" => "testUser01", "age" => 25]);
-        }
     }
 
     public function findAll($collection) {
         $database = new \MongoDB\Client("mongodb://localhost:27017");
         return $database->rickMortySeteDigital->$collection->find();
+    }
+
+    public function findParam($collection, $param) {
+        $database = new \MongoDB\Client("mongodb://localhost:27017");
+        return $database->rickMortySeteDigital->$collection->find($param);
     }
 
     public function insertInto($collection, $data) {
